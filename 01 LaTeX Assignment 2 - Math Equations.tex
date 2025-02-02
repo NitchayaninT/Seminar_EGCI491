@@ -1,0 +1,55 @@
+\documentclass[a4paper]{article} %Always requireed\part{title}
+
+\usepackage[margin=1.5in]{geometry} %To adjust margins
+\usepackage{comment} %To use a block comment in a document
+\usepackage{amsmath} % Required to use the equation*
+% preamble to declare kackges used in the document
+%========================================================================
+%Packages that will be used
+
+%To use a block comment in a document
+\usepackage{comment} 
+\begin{comment}
+	Test a block comment 
+\end{comment}
+%------------------------------------------------------------------------
+\usepackage{fontspec}
+%Either Xelatex or Lualatex is required as a default complier
+%To learn more about "fontspec" package: https://ctan.org/pkg/fontspec?lang=en 
+%========================================================================
+%To declare a document title and an author(s) 
+\title{EGCI491 Computer Engineering Seminar\\ \LaTeX \space Assignment II}
+\author{Nitchayanin Thamkunanon}
+
+%document
+\begin{document}
+	\maketitle
+	\setcounter{section} {0}%To start this section with 0
+	\section{Mathematical Equations } %Add section
+
+	%Put your text in a body of your document here... 
+	\noindent A quadratic equation is a second degree polynomial written as $ax^2+bx+c=0$. The generic function of the quadratic equation can be determined as:
+	
+	\begin{align}
+		\begin{split}
+			f^2(x) = ax^2+bx+c\\
+		\end{split}
+	\end{align}
+	\noindent whose discriminant  $b^2-4ac$ is positive, with x representing an unknown, with a, b and c representing constants, and with a $x\not=0$, the quadratic formula is:
+	
+	\begin{align}
+	x = - b\pm\frac{\sqrt{b^2 - 4ac}}{2a}
+	\end{align}
+	
+	\noindent where the plus–minus symbol $\pm$ indicates that the quadratic equation has two solutions. When written separately, they become:
+	
+		\begin{align}
+			\begin{split}
+				x &= - b + \frac{\sqrt{b^2 - 4ac}}{2a} \quad and \\
+				  x &= - b - \frac{\sqrt{b^2 - 4ac}}{2a}
+		     \end{split}
+		\end{align}
+			
+	
+\end{document}
+%========================================================================

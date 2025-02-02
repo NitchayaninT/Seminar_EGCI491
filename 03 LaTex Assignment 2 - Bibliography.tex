@@ -1,0 +1,58 @@
+\documentclass[a4paper, 12pt]{report}
+
+% Preamble ---
+\usepackage[margin=1.5in]{geometry} %To adjust margins
+\usepackage{xcolor} %For text in colors
+\usepackage{ragged2e} 
+ %\usepackage{indentfirst}
+ 
+%\usepackage{arrayjob}
+%\newarray\bibstyles
+%\readarray{bibstyles}{unsrtnat&abbrvnat&dinat&plainnat&rusnat&ksfh_nat}
+
+
+%\usepackage{natbib}
+\usepackage[square,numbers,sort]{natbib}
+%\bibliographystyle{unsrtnat}
+%\bibliographystyle{abbrvnat}
+%\bibliographystyle{plainnat.bst}
+
+\renewcommand\bibname{\centering Reference}
+
+%To declare a document title and an author(s) 
+\title{EGCI491: Assignment II}
+\author{Enter your name here} %Replace your name here
+\date{\today}
+
+\begin{document}
+	\bibliographystyle{plainnat.bst}
+	\maketitle
+		
+	\chapter*{\centering Chapter 2 \\  Literature Review}
+	
+	\hspace{\parindent} 
+	Provide a brief description of what this chapter covers. It is typically an outline of a comprehensive literature review for the whole project.  All related papers and previous works should be reviewed. You should summarize the main contributions, techniques used, data, key findings, and research gaps of each paper.
+		
+	\setcounter{chapter}{2}
+	\section{ FPGA Accelerated Post-Quantum Cryptography \cite{paper_1}}
+	This paper presents a comprehensive survey on FPGA-based implementations of Post-Quantum Cryptography (PQC), highlighting key advancements, methodologies, and security considerations. With the emergence of quantum computing, traditional cryptographic systems such as RSA and ECC face vulnerabilities, necessitating quantum-resistant alternatives. The National Institute of Standards and Technology (NIST) has progressed into the fourth round of PQC standardization, emphasizing the importance of efficient hardware implementations.
+	
+	FPGA technology has emerged as a promising platform for accelerating PQC algorithms due to its reconfigurability, parallel processing capabilities, and hardware-software co-optimization. This paper surveys state-of-the-art FPGA implementations, focusing on fast arithmetic techniques, architectural optimizations, and open-source PQC hardware projects. Additionally, it discusses algorithm-hardware codesign strategies, which enhance computational efficiency and adaptability.
+	
+	Experimental evaluations of FPGA-based PQC implementations demonstrate significant improvements in performance and resource utilization compared to general-purpose hardware. Optimized modular arithmetic units, deep pipeline architectures, and memory-efficient designs contribute to lower latency and improved power efficiency. However, challenges such as scalability, security vulnerabilities, and standardization gaps remain key areas for future research.
+	
+	In conclusion, this survey provides a detailed analysis of current FPGA-based PQC implementations, emphasizing both performance optimization and security challenges. The paper aims to inform future research on designing efficient and secure FPGA accelerators for PQC, paving the way for widespread adoption of quantum-resistant cryptographic solutions.
+
+	
+	\section{NIST Post-Quantum Cryptography – A Hardware Evaluation Study \cite{paper_2}}
+	This paper provides an in-depth evaluation of the hardware performance of NIST’s Post-Quantum Cryptography (PQC) candidates, focusing on both FPGA and ASIC implementations. With the rapid advancements in quantum computing, conventional cryptographic algorithms such as RSA and ECC are becoming increasingly vulnerable, necessitating the development of efficient and secure quantum-resistant alternatives. The National Institute of Standards and Technology (NIST) has been leading the PQC standardization process, and this study critically examines the feasibility of implementing these algorithms in hardware.
+	
+	The paper evaluates multiple PQC algorithms shortlisted by NIST, including lattice-based, hash-based, code-based, and multivariate cryptosystems. Key performance metrics such as resource utilization, power consumption, latency, and computational throughput are analyzed across different hardware platforms. FPGA implementations are shown to offer significant flexibility, parallel processing capabilities, and adaptability for PQC acceleration, while ASIC-based solutions provide better power efficiency and lower area overhead, making them suitable for energy-constrained environments.
+
+	  Experimental results indicate that lattice-based cryptographic schemes, particularly Kyber and Dilithium, achieve a good balance between security and efficiency, with FPGA implementations leveraging optimized arithmetic units and pipelined architectures for enhanced performance. Meanwhile, hash-based and code-based schemes exhibit higher memory and computational demands, posing challenges for real-world deployment. Security concerns, such as potential side-channel attack vulnerabilities, are also discussed, emphasizing the need for additional countermeasures.
+	
+	In conclusion, this study provides a comprehensive comparison of hardware-based PQC implementations, highlighting both strengths and limitations. Future research should focus on optimizing FPGA architectures, improving resource utilization, and integrating countermeasures against physical attacks. This work serves as a reference for researchers and engineers designing secure and efficient cryptographic hardware solutions for the post-quantum era.
+	\newpage
+	\bibliography{References}
+	
+\end{document}
