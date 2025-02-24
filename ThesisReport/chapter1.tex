@@ -1,0 +1,81 @@
+\chapter{INTRODUCTION}
+
+\section{Background}
+Quantum computers pose a significant threat to widely used encryption schemes such as RSA and ECC. This is due to a powerful quantum algorithm known as Shor’s Algorithm, which enables quantum computers to efficiently factor large integers and solve discrete logarithm problems—mathematical foundations that underpin RSA and ECC security. If large-scale quantum computers become practical, they could break these cryptographic systems.
+
+To address this impending threat, the cryptographic community has been actively researching post-quantum cryptography (PQC), which is a set of cryptographic algorithms designed to remain secure against attacks from both classical and quantum computers. These algorithms rely on mathematical problems that are believed to resist quantum computing advances, including lattice-based, code-based, hash-based, and multivariate polynomial cryptosystems. By developing and standardizing these new cryptographic techniques, researchers aim to ensure long-term security in a post-quantum world.
+
+\section{Objective}
+\noindent\hspace{1.5em}
+\begin{enumerate}
+	\item To develop a FPGA base cryptopraphic accelerator for post-quantum cryptography algorithm, and itdentify potential issues in hardware implementation of post-quantum cryptography.
+	\item To analyze the performance of the hardware implementation, evaluate its resource utilization and efficiency, and identify potential challenges such as power consumption, latency, and security vulnerabilities
+	 \item To deploy an already established post-quantum cryptographic algorithm on an FPGA.
+\end{enumerate}
+
+\section{Scope}
+\begin{enumerate}
+	\item To identify a suitable Post-Quantum cryptographic algorithm that can be implemented on FPGA 
+	\item Using FGPA to accelerate the mathamatical calculation processes using in cryptographic algorithm.
+    \item The main focus of our thesis is about runtime complexity but omit space complexity and power consumption  
+    \item Deploy an already existing algorithm on FPGA, but not develop a new cryptographic algorithm
+    \item Implement the cryptographic algorithm on the Arty S7-25 FPGA using Verilog
+\end{enumerate}
+
+\section{Expected Results}
+\begin{enumerate}
+	\item The proposed cryptographic algorithm works on FGPA as what we intended.
+	\item A functional and optimized hardware implementation of a selected post-quantum cryptographic algorithm
+	\item Functional verification of the FPGA accelerator using simulation tools and testbenches.
+\end{enumerate}
+
+\newpage
+\section{Timeline}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}	
+	\begin{table}[!ht]
+	%\footnotesize
+	\sloppy
+	\centering
+	\caption{Project Timeline}
+	\label{tab: your-table} %for cross-reference
+	\begin{tabular}{|p{2.15cm}|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		\multicolumn{1}{|c|}{}& \multicolumn{12}{c|}{\textbf{Timeline}} \\ \cline{2-13} 
+		\multicolumn{1}{|c|}{}& \multicolumn{12}{c|}{\textbf{2025}}  \\ \cline{2-13} 
+		\multicolumn{1}{|c|}{\multirow{-3}{2cm}{\textbf{Plan}}} & \textbf{Jan} & \textbf{Feb} & \textbf{Mar} & \textbf{Apr} & \textbf{May} & \textbf{Jun} & \textbf{Jul} & \textbf{Aug} & \textbf{Sep} & \textbf{Oct} & \textbf{Nov} & \textbf{Dec} \\ \hline
+		1: Study PQA & 
+		\cellcolor[HTML]{000000} &
+		\cellcolor[HTML]{000000} &
+		\cellcolor[HTML]{000000} &
+		\cellcolor[HTML]{000000} &
+		\cellcolor[HTML]{000000}  & & & & & & &   \\ \hline
+		2: Study FPGA & & &
+		\cellcolor[HTML]{000000} & 
+		\cellcolor[HTML]{000000} &
+		\cellcolor[HTML]{000000} & & & & & & &\\ \hline
+		3: Chapter1 & & & 
+		\cellcolor[HTML]{000000} &
+		& & & & & & & &\\ \hline
+		4: Chapter2 & & & 
+		\cellcolor[HTML]{000000} &
+		\cellcolor[HTML]{000000} & & & & & & & &\\ \hline
+		5: Chapter3 & & & & & 
+		\cellcolor[HTML]{000000} &
+			\cellcolor[HTML]{000000} &
+		\cellcolor[HTML]{000000} & & & & & \\ \hline
+		6: Testing & & &  & & & & &  
+		\cellcolor[HTML]{000000} & 
+		\cellcolor[HTML]{000000} &
+		\cellcolor[HTML]{000000} &
+		\cellcolor[HTML]{000000} &\\ \hline
+		7: Chapter4 & & & & & & & & & & 
+		\cellcolor[HTML]{000000} & 
+		\cellcolor[HTML]{000000} & \\ \hline
+		8: Chapter5 & & & & & & & & & & & & 
+		\cellcolor[HTML]{000000} \\ \hline
+		9: Project Presentation& & & & & & & & & & & & 
+		\cellcolor[HTML]{000000} \\ \hline
+	\end{tabular}
+\end{table}

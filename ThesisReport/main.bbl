@@ -1,0 +1,29 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Kumar(2022)]{paper_1}
+M.~Kumar.
+\newblock Post-quantum cryptography algorithm's standardization and performance
+  analysis.
+\newblock \emph{Array Volume 15}, 2022.
+\newblock \doi{10.1016/j.array.2022.100242}.
+
+\bibitem[Li et~al.(2022)Li, Tang, Que, and Zhang]{paper_2}
+H.~Li, Y.~Tang, Z.~Que, and J.~Zhang.
+\newblock Fpga accelerated post-quantum cryptography.
+\newblock \emph{IEEE Transactions on Nanotechnology ( Volume: 21)}, pages 685
+  -- 691, 2022.
+\newblock \doi{10.1109/TNANO.2022.3217802}.
+
+\bibitem[Policarpo et~al.(2022)Policarpo, Nery, and de~O.~Albuquerque]{paper_3}
+R.~C. Policarpo, A.~S. Nery, and R.~de~O.~Albuquerque.
+\newblock Quantum-resistant cryptography in fpga.
+\newblock \emph{7th Workshop on Communication Networks and Power Systems (WCNPS
+  2022)}, 2022.
+\newblock \doi{10.1109/WCNPS56355.2022.9969738}.
+
+\end{thebibliography}
